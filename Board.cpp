@@ -1,7 +1,10 @@
 #include "Board.h"
 
-//constructor
+//input: int w, int h
+//output: void
+//usage: constructor
 Board::Board(int w, int h) {
+	//set size of board
 	height = h;
 	width = w;
 	//set up for p1,p2
@@ -9,12 +12,14 @@ Board::Board(int w, int h) {
 	int	left = (defaultWidth - width) / 2 ;
 	int right = left + width, bottom = top + height;
 
-	//2 anchor position support class Player
+	//p1 and p2 are important anchor to support class Player
 	p1 = Point(left, top);
 	p2 = Point(right, top);
 }
 
-//draw ball 
+//input:
+//output: void
+//usage: draw ball 
 void Board::drawBoard() {
 	//set color
 	setcolor(GREEN);

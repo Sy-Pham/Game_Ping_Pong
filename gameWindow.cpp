@@ -14,6 +14,8 @@ gameWindow::gameWindow() :board(600, 400), ball(board, player1, player2), player
 //	if (GetAsyncKeyState(VK_DOWN)) player2.moveDown();//if discover key DOWN pressed , player2 will move down
 //}
 
+//output: void
+//usage: main function to activate game
 void gameWindow::runGame() {
 	/*thread test1(&gameWindow::testPlayer1, this);
 	thread test2(&gameWindow::testPlayer2, this);
@@ -68,6 +70,8 @@ void gameWindow::runGame() {
 	}
 }
 
+//output: void
+//usage: draw score of player1 on the screen
 void gameWindow::drawScorePlayer1() {
 	//Draw Player text
 
@@ -95,6 +99,8 @@ void gameWindow::drawScorePlayer1() {
 	outtextxy(xScore, yScore, Score);//draw text
 }
 
+//output: void
+//usage: draw score of Player2 on the screen
 //the same as drawScorePlayer1
 void gameWindow::drawScorePlayer2() {
 	//Draw Player text
@@ -119,7 +125,8 @@ void gameWindow::drawScorePlayer2() {
 	outtextxy(xScore, yScore, Score);
 }
 
-//draw instructrion
+//output: void
+//usage: draw instructrion
 void gameWindow::drawInstruction() {
 	//set color text
 	setcolor(5);
@@ -139,7 +146,9 @@ void gameWindow::drawInstruction() {
 	outtextxy(x, y + 2 * height_text, InPlay);
 	outtextxy(x, y + 3 * height_text, InPlay2);
 }
-//draw title of game
+
+//output: void
+//usage: draw title of game
 void gameWindow::drawTitle() {
 	setcolor(BLUE);
 	settextstyle(3, 0, 7);
@@ -152,7 +161,9 @@ void gameWindow::drawTitle() {
 	outtextxy(x, y, title);
 
 }
-//Pause Game
+
+//output: void
+//usage: Pause Game
 void gameWindow::pauseGame() {
 	//set size of retangle
 	int width = 200;
@@ -177,14 +188,18 @@ void gameWindow::pauseGame() {
 	outtextxy(x, y, pause);
 
 }
-//find winner
+
+//output: int
+//usage: find whether there is a winner or not
 int gameWindow::winner() {
 	if (player1.getScore() == scoreWiner) return 1;//player 1 is winner
 	if (player2.getScore() == scoreWiner) return 2;//player 2 is winner
-	//non of them
+	//none of them
 	return 0;
 }
-//draw result
+
+//output: void
+//usage: draw result on the screen
 void gameWindow::drawResult(int idx) {
 	char* player = new char;
 	_itoa(idx, player, 10);//transform interger into character 

@@ -1,15 +1,19 @@
 #include "Player.h"
 
+//set default contribution
 int Player::height = 60;
 int Player::width = 20;
 int Player::boardDistance = 10;
 
-//constructor class Player
+//input: int x, int y
+//usage: constructor class Player
 Player::Player(int x, int y) {
 	drawPlayer(x, y);
 }
 
-//draw player
+//input: int x, int y
+//output: void
+//uasge: draw player
 void Player::drawPlayer(int x, int y) {
 	//set color
 	setcolor(WHITE);
@@ -21,7 +25,8 @@ void Player::drawPlayer(int x, int y) {
 	bar(left, top, right, bottom);
 }
 
-//constructor class Player1
+//input: Board& board
+//usage: constructor class Player1
 Player1::Player1(Board& board) {
 	Point p = board.getPoint1();
 	int h = board.getHeight();
@@ -35,7 +40,8 @@ Player1::Player1(Board& board) {
 	Player(x, y);
 }
 
-//constructor class Player2
+//input: Board &board
+//usage: constructor class Player2
 //it is the same as constructor Player1
 Player2::Player2(Board& board) {
 	Point p = board.getPoint2();
