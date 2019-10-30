@@ -15,6 +15,7 @@ const int defaultWidth = 900;
 
 class Board
 {
+	//size of ball
 	int height;
 	int width;
 	Point p1;//anchor left
