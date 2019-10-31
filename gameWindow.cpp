@@ -24,7 +24,7 @@ void gameWindow::runGame() {
 
 	drawTitle();//draw title
 	drawInstruction();//draw instruction
-	while (1) {
+	while (!exitFlag) {
 
 		board.drawBoard();//draw ball
 
@@ -55,6 +55,7 @@ void gameWindow::runGame() {
 
 		int Winner = winner();//find whether there is winner
 		if (Winner) {// Find winner
+			exitFlag = true;
 			drawResult(Winner);//draw result
 			delay(2000);
 

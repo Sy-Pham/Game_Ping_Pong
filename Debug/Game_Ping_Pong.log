@@ -1,4 +1,19 @@
-﻿  gameWindow.cpp
+﻿  Ball.cpp
+C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Game_Ping_Pong\Ball.cpp(84,18): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  Board.cpp
+  Player.cpp
+  Random.cpp
+C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Game_Ping_Pong\Ball.cpp(98,18): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  gameWindow.cpp
   test.cpp
   Generating Code...
-  Game_Ping_Pong.vcxproj -> D:\Users\Documents\GitHub\Game_Ping_Pong\Debug\Game_Ping_Pong.exe
+C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Game_Ping_Pong\Random.cpp(7,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  LINK : C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Debug\Game_Ping_Pong.exe not found or not built by the last incremental link; performing full link
+graphics.lib(dibutil.obj) : warning LNK4099: PDB 'bgi.pdb' was not found with 'graphics.lib(dibutil.obj)' or at 'C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Debug\bgi.pdb'; linking object as if no debug info
+graphics.lib(drawing.obj) : warning LNK4099: PDB 'bgi.pdb' was not found with 'graphics.lib(drawing.obj)' or at 'C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Debug\bgi.pdb'; linking object as if no debug info
+graphics.lib(file.obj) : warning LNK4099: PDB 'bgi.pdb' was not found with 'graphics.lib(file.obj)' or at 'C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Debug\bgi.pdb'; linking object as if no debug info
+graphics.lib(misc.obj) : warning LNK4099: PDB 'bgi.pdb' was not found with 'graphics.lib(misc.obj)' or at 'C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Debug\bgi.pdb'; linking object as if no debug info
+graphics.lib(text.obj) : warning LNK4099: PDB 'bgi.pdb' was not found with 'graphics.lib(text.obj)' or at 'C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Debug\bgi.pdb'; linking object as if no debug info
+graphics.lib(winbgi.obj) : warning LNK4099: PDB 'bgi.pdb' was not found with 'graphics.lib(winbgi.obj)' or at 'C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Debug\bgi.pdb'; linking object as if no debug info
+graphics.lib(winthread.obj) : warning LNK4099: PDB 'bgi.pdb' was not found with 'graphics.lib(winthread.obj)' or at 'C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Debug\bgi.pdb'; linking object as if no debug info
+  Game_Ping_Pong.vcxproj -> C:\Users\Sy Pham\Documents\GitHub\New folder\Game_Ping_Pong\Debug\Game_Ping_Pong.exe
